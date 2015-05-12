@@ -16,7 +16,7 @@ factions = ["Spain", "Switzerland", "Croatia", "Spain"];
 		(1..4).to_a.each do |j|
 			player.winners.create winner_faction: player.favorite_faction, loser_faction: "Croatia", loser_id: 3,
 								  duration: 1500, start: j.day.ago
-			player.losers.create winner_faction: "Croatia", loser_faction: player.favorite_faction, winner_id: 4,
+			player.losers.create winner_faction: "Switzerland", loser_faction: player.favorite_faction, winner_id: 4,
 								  duration: 1500, start: j.day.ago
 							
 		end
