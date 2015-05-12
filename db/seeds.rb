@@ -10,7 +10,7 @@ players = ["Rafael Nadal", "Roger Federer", "Djokovic", "Ferrer"];
 factions = ["Spain", "Switzerland", "Croatia", "Spain"];
 
 
-(1..players.length).to_a.each do |i|
+(0..players.length-1).to_a.each do |i|
 	player = Player.create(name: players[i], favorite_faction: factions[i])
 
 		(1..4).to_a.each do |j|
